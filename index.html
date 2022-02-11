@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Health Hub | Welcome</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="js/script1.js"></script>
+		<script src="js/dreamweaver_book.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div id="branding_1">
+					<h1><a href="index.html"><span class="highlight">Health</span> Hub</a></h1>
+				</div>
+			<section id="newsletter_1">
+			<div class="container">
+					<form>
+						<button type="submit" class="button_2"><a href="Register.html">Register</a></button>
+						<button type="submit" class="button_2"><a href="Log-in.html">Log-in</a></button>
+					</form>
+			</div>
+		</section>
+			</div>
+		</header>
+		<section id="showcase">
+
+			<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/pic1.jpg" style=" width:100%">
+  <div class="text"><h1>We make you stronger</h1></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/pic2.jpg" style="width:100%">
+  <div class="text"><h1>Make yourself proud</h1></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/pic3.jpg" style="width:100%">
+  <div class="text"><h1>Hustle for Muscle</h1></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</section><br>
+		<section id="newsletter">
+			<div class="container">
+					<h1>Subscribe to our Newsletter</h1>
+					<form>
+						<input type="email" placeholder="Enter Email..">
+						<button type="submit" class="button_1">Subscribe</button>
+					</form>
+			</div>
+		</section>
+		<section id="boxes">
+			<div class="container">
+				<div class="box">
+					<img src="images/slider2.jpg">
+					<h3>Try new Activities</h3>
+					<p>Fitnes Hub provides individual introduction sessions for any of our class formats. Try Pilates, boxing, step or yoga and we will get you ready to move smoothly into the class.</p>
+				</div>
+				<div class="box">
+					<img src="images/Mem3.png">
+					<h3>Get Healthy</h3>
+					<p>Starting with your Fitness Evaluation, we guide you in using exercise to improve your everyday health. Exercise prescription can lower blood pressure, combat osteo-arthritis, rehab injuries, correct muscle imbalance, and reduce pain.</p>
+				</div>
+				<div class="box">
+					<img src="images/slider1.jpg">
+					<h3>Learn to relax</h3>
+					<p>Try Yoga to clear your mind and reduce tension, and unwind after a hard workout or a long day.</p>
+				</div>
+			</div>
+		</section>
+		<footer>
+		<header>
+			<div class="container">
+				<nav>
+					<ul>
+					<li class="current"><a href="home.html">Home</a></li>
+					<li><a href="About.html">About</a></li>
+					<li><a href="Programs.html">Programs</a></li>
+					<li><a href="Services.html">Services</a></li>
+					<li><a href="Trainers.html">Trainers</a></li>
+					<li><a href="Products.html">Products</a></li>
+					<li><a href="Contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<ul id="footer">
+		<li>&copy; 2022 All rights reserved</li>
+		<li>Made with ❤️ by Sidharth Rhoda</li>
+		</ul>
+		</footer>
+	</body>
+</html>

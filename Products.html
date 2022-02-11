@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Health Hub | Welcome</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="js/script1.js"></script>
+		<script src="js/dreamweaver_book.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<style>
+*{box-sizing: border-box;}
+
+.container123 {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+.image {
+  display: block;
+  width: 60%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  height:100px;
+  width:280px;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  text-align: center;
+}
+.container123:hover .overlay {
+  opacity: 1;
+}
+
+
+</style>
+
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div id="branding">
+					<h1><a href="index.html"><span class="highlight">Health</span> Hub</a></h1>
+				</div>
+			</div>
+		</header>
+		<section id="newsletter">
+			<div class="container">
+					<h1>Subscribe to our Newsletter</h1>
+					<form>
+						<input type="email" placeholder="Enter Email..">
+						<button type="submit" class="button_1">Subscribe</button>
+			</div>
+		</section>
+		<section id="boxes">
+			<div class="container">
+				<center>
+				<h1><i>Our Products</i></h1>
+				<p><i><b>Think of your workouts as important meetings…</i></p>
+				</center>
+				<center>
+				<div class="box1">
+					<div class="container123">
+						<img src="images/gym1.jpg" alt="Avatar" class="image">
+						<div class="overlay">
+							<div class="text">
+							<h3>Barbell</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="box1">
+					<div class="container123">
+						<img src="images/gym2.jpg" alt="Avatar" class="image">
+						<div class="overlay">
+							<div class="text">
+							<h3>Light Machines</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="box1">
+					<div class="container123">
+						<img src="images/gym3.jpg" alt="Avatar" class="image">
+						<div class="overlay">
+							<div class="text">
+							<h3>Dumbbell</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="box1">
+					<div class="container123">
+						<img src="images/gym4.jpg" alt="Avatar" class="image">
+						<div class="overlay">
+							<div class="text">
+							<h3>Heavy Machines</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="box1">
+					<div class="container123">
+						<img src="images/gym5.jpg" alt="Avatar" class="image">
+						<div class="overlay">
+							<div class="text">
+							<h3>Gloves</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="box1">
+					<div class="container123">
+						<img src="images/gym6.jpg" alt="Avatar" class="image">
+						<div class="overlay">
+							<div class="text">
+							<h3>Whey Protiens</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				</center>
+			</div>
+		</section>
+		<footer>
+		<header>
+			<div class="container">
+				<nav>
+					<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="About.html">About</a></li>
+					<li><a href="Programs.html">Programs</a></li>
+					<li><a href="Services.html">Services</a></li>
+					<li><a href="Trainers.html">Trainers</a></li>
+					<li class="current"><a href="Products.html">Products</a></li>
+					<li><a href="Contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<ul id="footer">
+		<li>&copy; 2022 All rights reserved</li>
+		<li>Made with ❤️ by Sidharth Rhoda</li>
+		</ul>
+		</footer>
+	</body>
+</html>

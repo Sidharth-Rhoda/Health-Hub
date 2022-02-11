@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Health Hub | Welcome</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="js/script1.js"></script>
+		<script src="js/dreamweaver_book.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<style>
+*{box-sizing: border-box;}
+
+.container123 {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+.image {
+  display: block;
+  width: 60%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  height:100px;
+  width:280px;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  text-align: center;
+}
+.container123:hover .overlay {
+  opacity: 1;
+}
+
+
+</style>
+
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div id="branding">
+					<h1><a href="index.html"><span class="highlight">Health</span> Hub</a></h1>
+				</div>
+			</div>
+		</header>
+		<section id="newsletter">
+			<div class="container">
+					<h1>Subscribe to our Newsletter</h1>
+					<form>
+						<input type="email" placeholder="Enter Email..">
+						<button type="submit" class="button_1">Subscribe</button>
+			</div>
+		</section>
+		<section id="boxes">
+			<div class="container">
+				<center>
+				<h1><i>Workout Programs</i></h1>
+				<p><i><b>It's never too late to become what you might have been.</i></p>
+				</center>
+				<center>
+				<div class="box1">
+					<div class="container123">
+						<img src="images/logo.jpg" alt="Avatar" class="image">
+						<div class="overlay">
+							<div class="text">
+							<h3>Fat Loss</h3>
+							</div>
+						</div>
+					</div>
+					<p><i>Feeling fitter, looking slimmer & in shape is what everyone wants at the end of the day.</i></p>
+					<p><i><b>We help you achieve that with our tailor made workout & diet routines.</b></i></p>
+				</div>
+				<div class="box1">
+					<div class="container123">
+						<img src="images/logo2.jpg" alt="Avatar" class="image">
+						<div class="overlay">
+							<div class="text">
+							<h3>Muscle Gain</h3>
+							</div>
+						</div>
+					</div>
+					<p><i>In this section we have different programs for men and women who are underweight.</i></p>
+					<p><i><b>Our special exercise & diet routines helps you in gaining weight.</b></i></p>
+				</div>
+				<div class="box1">
+					<div class="container123">
+						<img src="images/logo3.jpg" alt="Avatar" class="image">
+						<div class="overlay">
+							<div class="text">
+							<h3>Total Fitness</h3>
+							</div>
+						</div>
+					</div>
+					<p><i>Total Fitness which means being able to perform daily activities and much more without undue fatigue.</i></p>
+					<p><b><i>Strong & well conditioned heart & lungs through cardio activities.</b></i></p>
+				</div>
+
+				</center>
+			</div>
+		</section>
+		<footer>
+		<header>
+			<div class="container">
+				<nav>
+					<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="About.html">About</a></li>
+					<li class="current"><a href="Programs.html">Programs</a></li>
+					<li><a href="Services.html">Services</a></li>
+					<li><a href="Trainers.html">Trainers</a></li>
+					<li><a href="Products.html">Products</a></li>
+					<li><a href="Contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<ul id="footer">
+		<li>&copy; 2022 All rights reserved</li>
+		<li>Made with ❤️ by Sidharth Rhoda</li>
+		</ul>
+		</footer>
+	</body>
+</html>
